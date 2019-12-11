@@ -20,6 +20,8 @@ ul, h2 {
 
 /* CSS COMPONENT */
 .container {
+
+  animation: example 3s;
   border: solid 1px black;
   background: white;
 }
@@ -29,6 +31,7 @@ ul, h2 {
   width: 500px;
   margin: 10px auto;
   border: solid 1px black;
+  animation: spin 1.2s 1 linear;
 }
 
 
@@ -43,11 +46,11 @@ ul, h2 {
 
 .css {
   text-decoration: underline purple wavy;
-  /* text-decoration-style: wavy; */
 }
 
 input {
   font-size: 2rem;
+  margin: 25px;
 }
 
 input:focus {
@@ -69,3 +72,42 @@ input:focus {
 input:disabled {
   background:#999999;
 } 
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes example {
+  from {
+    background: gray;
+  }
+  to {
+    background: white;
+  }
+}
+
+@media print {
+  .box {
+    display: none ;
+  }
+}
+
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}

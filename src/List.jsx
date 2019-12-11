@@ -13,10 +13,10 @@ background: white`
 display: flex
 `
     const StyledLink = styled(Link)`
-text-decoration: none
+    text-decoration: none
 color: black
 & :hover{
-    background: yellow
+    background-color: yellow
 }`
     return (
         <div>
