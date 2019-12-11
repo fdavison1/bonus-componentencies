@@ -1,5 +1,6 @@
-.App {
+.App, body {
   text-align: center;
+  background: lightgray;
 }
 
 li {
@@ -16,3 +17,55 @@ ul, h2 {
   margin: 5px;
   padding: 5px;
 }
+
+/* CSS COMPONENT */
+.container {
+  border: solid 1px black;
+  background: white;
+}
+
+.box {
+  height: 100px;
+  width: 500px;
+  margin: 10px auto;
+  border: solid 1px black;
+}
+
+
+.box:nth-child(2n) {
+  background: lightgreen;
+}
+
+.box:nth-child(2n+1) {
+  box-shadow: -1px -1px 5px black inset;
+  background: linear-gradient(purple, gray)
+}
+
+.css {
+  text-decoration: underline purple wavy;
+  /* text-decoration-style: wavy; */
+}
+
+input {
+  font-size: 2rem;
+}
+
+input:focus {
+  background: black;
+}
+
+.green:focus {
+  color: green;
+}
+
+.red:focus {
+  color: red;
+}
+
+.blue:focus {
+  color: blue;
+}
+
+input:disabled {
+  background:#999999;
+} 
